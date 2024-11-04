@@ -1,0 +1,31 @@
+Preguntas de Reflexión (para cada parte)
+¿Qué ventajas y desventajas tiene la ejecución de programas de manera síncrona versus asíncrona?
+
+    Ventajas síncronas:
+        El flujo de ejecución es predecible y no es necesario gestionar el estado de múltiples tareas en ejecución al mismo tiempo
+
+    Desventajas síncronas:
+
+        Las operaciones de larga duración pueden bloquear el hilo principal
+        Ineficiencia en el uso de recursos.
+
+    Ventajas asíncronas:
+
+       Permite que el programa continúe ejecutándose mientras espera que las operaciones finalicen
+        En aplicaciones con interfaces gráficas, evita que la aplicación se congele mientras se realizan operaciones de larga duración.
+
+    Desventajas asíncronas:
+
+        Manejar múltiples tareas y sus estados.
+        Los errores pueden ser más difíciles de rastrear, ya que el flujo de ejecución no es lineal.
+
+
+¿Por qué es importante manejar las excepciones al trabajar con procesos?
+
+    Evitar errores no controlados, ayudar a identificar y corregir problemas del codigo, recuperar el estado del programa y
+     realizar acciones en caso de errores
+
+¿Qué tipo de problemas se pueden presentar al comunicarse entre procesos? ¿Cómo los has solucionado?
+
+    Condiciones de carrera, Bloqueos, Pérdida de mensajes.
+    Con Buffers para almacenar el mensaje
